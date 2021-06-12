@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+        Form Pemesanan Laptop <br />
+        Acer Predator Helios
+      </h1>
+    </header>
+
+    <main>
+      <p id="description" class="keterangan">Isi Form dibawah ini</p>
+
+      <form id="survey-form">
+        <div class="form-headings">
+          <!-- For & id sama -->
+          <label for="name" id="name-label">Nama</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Nama Anda"
+            class="form-inputs"
+            required
+          />
+          <br />
+          <label for="email" id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="penggunasosmed@gmail.com"
+            class="form-inputs"
+            required
+          />
+          <br />
+          <label for="number" id="number-label">Umur</label>
+          <input
+            id="number"
+            type="number"
+            name="number"
+            min="15"
+            max="80"
+            placeholder="Umur Anda"
+            class="form-inputs"
+            required
+          />
+          <br />
+
+          <label for="dropdown" id="model">Select Model</label>
+          <select name="dropdown" id="dropdown" class="form-inputs">
+            <option value="Model 0">Model 0</option>
+            <option value="Model 1">Model 1</option>
+            <option value="Model 2">Model 2</option>
+            <option value="Model 3">Model 3</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="model-color">Model Color : </label>
+          <br />
+          <input id="model-color" type="radio" name="color" value="hitam" />
+          <label for="model-color">Hitam</label>
+          <br />
+          <input id="model-color" type="radio" name="color" value="biru" />
+          <label for="model-color">Biru</label>
+          <br />
+          <input id="model-color" type="radio" name="color" value="hijau" />
+          <label for="model-color">Hijau</label>
+          <br />
+          <br />
+
+          <label for="fitur">Fitur Tambahan : </label>
+          <br />
+          <input id="checkbox" type="checkbox" value="headset" />
+          <label for="fitur">Headset Logitech : Rp 500k</label>
+          <br />
+          <input id="checkbox" type="checkbox" value="pentablet" />
+          <label for="fitur">XP-Pen Tablet : Rp 2 million</label>
+          <br />
+          <input id="checkbox" type="checkbox" value="mouse" />
+          <label for="fitur">Mouse Logitech : Rp 200k</label>
+          <br />
+          <br />
+
+          <label for="textarea">Komentar Tambahan</label>
+          <br />
+          <textarea
+            name="instructions"
+            id="textarea"
+            cols="40"
+            rows="5"
+          ></textarea>
+          <br />
+          <br />
+
+          <input
+            type="submit"
+            id="submit"
+            value="Place Order"
+            class="submit-button"
+          />
+        </div>
+      </form>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <!-- 
+    
+    Hello Camper!
+    
+    For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+    
+    - The freeCodeCamp Team 
+    
+    -->
+  </body>
+</html>
